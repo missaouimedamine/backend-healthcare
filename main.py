@@ -8,6 +8,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from app.utils.rag import get_chain_disease, get_chain_infos, get_chain_chat
 import os, asyncio
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -66,9 +67,3 @@ app.include_router(chatbot.router, prefix="/api/chatbot", tags=["chat"])
 @app.get("/")
 async def root():
     return {"message": "Symptom Checker API is running"}
-import os
-import uvicorn
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
