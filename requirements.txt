@@ -7,3 +7,5 @@ sentence-transformers
 openai
 reportlab
 langchain_community
+dotenv
+
