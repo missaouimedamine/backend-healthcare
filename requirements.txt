@@ -1,0 +1,13 @@
+fastapi 
+pydantic<2.0.0
+uvicorn
+langchain 
+faiss-cpu 
+sentence-transformers 
+openai
+reportlab
+geopy
+folium
+geocoder
+selenium
+bs4
