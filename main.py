@@ -57,8 +57,8 @@ app.add_middleware(
 
 # Include routers
 app.include_router(analysis.router, prefix="/api/analysis", tags=["analysis"])
-app.include_router(infos.router, prefix="/api/infos", tags=["infos"])
-app.include_router(reports.router, prefix="/api/reports", tags=["report"])
+#app.include_router(infos.router, prefix="/api/infos", tags=["infos"])
+#app.include_router(reports.router, prefix="/api/reports", tags=["report"])
 app.include_router(chatbot.router, prefix="/api/chatbot", tags=["chat"])
 
 @app.get("/")
