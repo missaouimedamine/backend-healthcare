@@ -8,9 +8,6 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from app.utils.rag import get_chain_disease, get_chain_infos, get_chain_chat
 import os, asyncio
-from dotenv import load_dotenv
-
-load_dotenv()
 
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
