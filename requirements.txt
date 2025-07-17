@@ -6,8 +6,4 @@ faiss-cpu
 sentence-transformers 
 openai
 reportlab
-geopy
-folium
-geocoder
-selenium
-bs4
+langchain_community
