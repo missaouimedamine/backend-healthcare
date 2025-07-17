@@ -7,7 +7,6 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from app.utils.rag import get_chain_disease, get_chain_infos, get_chain_chat
-from dotenv import load_dotenv
 import os, asyncio
 
 load_dotenv()
